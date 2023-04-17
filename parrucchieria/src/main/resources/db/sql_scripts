@@ -1,0 +1,16 @@
+/*====CREAZIONE TABELLA MATERIALE===============================*/
+
+CREATE TABLE `parrucchieria`.`materiale` (
+  `id` BIGINT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(50) NULL,
+  `prezzo` DOUBLE(10,2) NULL,
+  `tipo` VARCHAR(50) NULL,
+  `id_dipendente` BIGINT NULL,
+  `data_creazione` DATETIME NULL DEFAULT NULL,
+  `data_ultima_modifica` DATETIME NULL DEFAULT NULL,
+  `versione` INT NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE);
+
+
+/*==============================================================*/
